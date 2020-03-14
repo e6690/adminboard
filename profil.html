@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="profil.css">
+    <!--fontawesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>  
+
+
+
+    <title>Adminboard</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark row border-bottom  sticky-top" style="opacity: 0.8;">
+
+        <a class="col-3 navbar-brand" href="#">AdminBoard</a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="navbar-brand" href="index.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="cat.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="util.html">Utilisateurs</a>
+            </li>
+            </ul>
+          </div>
+    
+    <div class="dropdown d-flex">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          Bienvenue Houssein
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="profil.html">  
+                <i class="fas fa-user rounded-circle bg-dark text-white"></i>
+            Profil
+          </a>
+          <a class="dropdown-item" href="parametres.html">
+              <i class="fas fa-cog"></i>
+            Parametres
+          </a>
+        </div>
+        <a class="btn btn-secondary " href="#" role="button" >
+            <i class="fas fa-user-times"></i>
+            Logout
+          </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+  </nav>
+  <section class="bg-primary">
+      <div class="container">
+          <div class="row">
+              <div class="col text-white">
+                  <h1>
+                      <i class="fas fa-user text-white"></i>
+                      Edit Profile
+                    </h1>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+  <section class="py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="index.html">
+                    <p class="text-dark">
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                    Back to Dashboard </p>
+                </a>
+            </div>
+        <div class="col d-flex justify-content-between" style="width: 30px;">
+            <div class="lol bg-success text-white">
+                <a class="btn btn-success btn-lg " data-toggle="modal" data-target="#exampleModal" href="#">
+                   <p class="text-center text-white mt-1 justify-content-around" > <i class="fas fa-lock"></i>
+                    Change Password</p>
+                    
+                </a>
+            </div>
+                <div class="bg-danger">
+            <a class="btn btn-danger btn-lg" href="#">
+                <p class="text-center text-white mt-1 justify-content-around">
+                <i class="fas fa-times"></i>
+                Delete Account</p>
+            </a>
+        </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8">
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                     <form >
+                       <div class="form-group">
+                         <label for="exampleInputpassword1">Password</label>
+                         <input type="password" class="form-control" id="exampleInputpassword1">
+                       </div>
+                       <div class="form-group">
+                          <label for="exampleInputconfirmpassword1">Confirm Password</label>
+                          <input type="password" class="form-control" id="exampleInputconfirmpassword1">
+                        </div>
+                     </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Update Password</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+
+<!-- Modal -->
+        <div class="card">
+ <div class=" card-header">
+   <h5 class="card-title" id="exampleModalLabel">Ajoute un post</h5>
+   </button>
+ </div>
+ <div class="card-body">
+   <form>
+     <div class="form-group">
+       <label for="exampleInputTitle1">Edit Profile</label>
+       <input type="title" class="form-control" id="exampleInputTitle1">
+     </div>
+    </form>
+   
+   
+   <div class="form-group">
+       <label for="exampleFormControlSelect1">Categorie</label>
+       <select class="form-control" id="exampleFormControlSelect1">
+         <option>Web Developement</option>
+         <option>Data scientists</option>
+         <option>Dev Ops</option>
+         <option>Developpeurs Webs</option>
+         <option>Developpeurs des systèmes d'exploitations</option>
+       </select>
+   </div>
+        <div>
+            <p>Image Upload</p>
+          <div class="d-flex">
+         
+         <input type="file" class=" form-file-control" href="#" role="button"></input>
+        
+         
+          </div>
+          <div>
+              <p><small class="text-light">Max Size 3mb</small></p>
+          </div>
+
+         
+          
+        </div>
+        <div id="edito"></div>
+        <script src="https://cdn.ckeditor.com/ckeditor5/17.0.0/classic/ckeditor.js"></script> 
+
+        </div>
+        </div>
+      </div>
+      <div class="col-xl-4">
+          <div class="card-body">
+              <h3 class="card-title">Elysée Eve</h3>
+              <img src="eve.jpg" alt="" style=" width: 100%; height: 300px">
+              <div class="exam">
+                <label for="exampleInputEditimage1"></label>
+                <button class="btn-primary btn-block rounded pt-1"><h5>Edit Image</h5></button></br>
+                <button class="btn-danger btn-block rounded pt-1"><h5>Delete Image</h5></button>
+           </div>
+          </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+  <footer class="text-white text-center ">
+      <div class="foot py-3">
+          copyright &copy; 2020
+      </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#edito' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+  </body>
+</html>

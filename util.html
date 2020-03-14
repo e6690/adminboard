@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="util.css">
+     <!--fontawesome-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>  
+
+    <title>AdminBoard</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark row border-bottom  sticky-top" style="opacity: 0.8;">
+
+        <a class="col-3 navbar-brand" href="#">AdminBoard</a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="navbar-brand" href="index.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="cat.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="util.html">Utilisateurs</a>
+            </li>
+            </ul>
+          </div>
+    
+    <div class="dropdown d-flex">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          Bienvenue Houssein
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="profil.html">
+              <i class="fas fa-user rounded-circle bg-dark text-white"></i>
+            Profil
+          </a>
+          <a class="dropdown-item" href="#">
+              <i class="fas fa-cog"></i>
+            Parametres
+          </a>
+        </div>
+        <a class="btn btn-secondary " href="#" role="button" >
+            <i class="fas fa-user-times"></i>
+            Logout
+          </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+  </nav>
+  <section class="bg-warning">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-white">
+                    <i class="fas fa-users"></i>
+                    Users</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-auto">
+                <form>
+                    <div class="input-group" style="margin-left: 400px;" >
+                    <div class="input-group-prepend">
+                         <label for="username1"></label>
+                        <input type="text" class="form-control" id="username" placeholder="Search">
+                    </div>
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-warning">Search</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col py-5">
+          <table class="table table-striped border rounded">
+            <tr>
+              <td colspan="5"><h2>Les postes recents</h2></td>
+            </tr>
+            <tbody>
+                <tr class="bg-dark text-white">
+                    <th class="col-1">#</th>
+                    
+                    <th class="col-2">Titre</th>
+                    
+                    <th class="col-3">Categorie</th>
+                    
+                    <th class="col-3">Date du poste</th> 
+                    <th class="col-3"></th>
+                    
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    
+                    <td>Post One</td>
+                    
+                    <td>Web Developement</td>
+                    
+                    <td>Octobre 12,2019</td>
+                    <td></td>
+                           
+                  </tr>
+                  <tr>
+                      <th>2</th>
+                      
+                      <td>Post Two</td>
+                      
+                      <td>Tech Gadjets</td>
+                      
+                      <td>Octobre 13,2019</td>
+                      <td></td>
+                                
+                    </tr>
+                    <tr>
+                        <td><nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                          </nav></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                                 
+                    </tr>
+                   
+            </tbody>
+            
+            
+          </table>
+        </div> 
+  
+  </div>
+        
+</div>
+     
+  </section>
+
+  
+
+
+  <footer class="text-white text-center ">
+    <div class="foot py-3">
+        copyright &copy; 2020
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
